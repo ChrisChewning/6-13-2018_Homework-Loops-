@@ -21,13 +21,28 @@ for (i = 0; i <20 ; i++) {
 console.log("Love me, pet me! HSSSSS!");
 };
 
+
+//------------------ASK ABOUT #3 ------------------------------------
+
 //4. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 //
 // Hint: You will need to use Math.random()
 
-for (i = 0; i <20 ; i+=2) {
+for (let i = 0; i <20 ; i+=2) {
   console.log(Math.random("Love me, pet me! HSSSSS!"));
 };
+
+
+for (let i = 0; i <=20; i++) {
+  if (i% 2 === 0) {
+    console.log("Love me, pet me! HSSSSS!");
+  }
+}
+
+//random decimals and you are trying to get the string to log instead of decimals.
+
+
+
 
 //Chain methods? So they're integers and not 0 - 1, which is what the random method does.
 
@@ -49,9 +64,11 @@ for (i = 1; i <=100; i++) {
   else if (i % 5 === 0) {
     console.log("Buzz")
   }
-  else if (i % 3 && 5) {
+  else if ((i % 3 === 0) && (i % 5 === 0)) {
   console.log("FizzBuzz")
-  }
+} else {
+  console.log(i);
+}
 };
 
 
@@ -85,15 +102,15 @@ console.log(kristyn);
 
 
 
-//COMMIT 6: WORKS! Review what didn't work at first. 
+//COMMIT 6: WORKS! Review what didn't work at first.
 
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-
 for (let i = 0; i < ninjaTurtles.length; i++) {
-//let newNinjas[i] = ninjaTurtles[i].toUpperCase(); //DIDN'T WORK
 console.log(ninjaTurtles[i].toUpperCase());
 };
 
+
+//let newNinjas[i] = ninjaTurtles[i].toUpperCase(); //DIDN'T WORK
 
 //COMMIT 7:
 
@@ -131,11 +148,16 @@ const thomsCloset = [
 // Alien Attire
 // Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 
-//step 1: remove krystn's left shoe. save it const kristynsShoe.
-console.log(const kristynsLeftShoe = kristynsShoe[0]);
-console.log(kristynsShoe.shift());
+//step 1: remove krystn's left shoe. save it const kristynsShoe. WORKS
+const kristynsShoe = kristynsCloset[0];
+//OR const kristynsShoe = kristynsCloset.shift();
+console.log(kristynsLeftShoe);
+
+
+console.log(kristynsLeftShoe.shift());
 
 //step 2: use kristynsShoe to add it to Thom's accessories array.
+//need to add where you don't delete what's already there in that index space.
 console.log(thomsCloset[2][1] = kristynsLeftShoe);
 
 
@@ -155,13 +177,20 @@ console.log(thomsCloset[2][1] = kristynsLeftShoe);
 //
 // Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-//MY GUESS SO FAR: for (let i = 0; let <= kristynsCloset.length; i++) {
-// console.log("WHIRR: Now washing " + [i]);
-// }
+//MY GUESS SO FAR:
+for (let i = 0; let <= kristynsCloset.length; i++) {
+console.log("WHIRR: Now washing " + [i]);
+}
+
 
 //Step 2: console.log all of the arrays.
 // Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 //
+
+for (let i = 0; let < thomsCloset.length; i++) {
+  console.log(thomsCloset[i]);
+}
+
 
 //MY GUESS SO FAR: for loop to loop through each array. Console.log after each array.length is done?
 
