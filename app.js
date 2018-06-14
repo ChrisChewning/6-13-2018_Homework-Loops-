@@ -80,3 +80,21 @@ console.log(matt);
 //Remove "Pittsburgh" from Kristyns array and add "Brooklyn".
 kristyn.splice(2,1, "Brooklyn"); //start at the 2nd index, cut off 1 index, add this item.
 console.log(kristyn);
+
+
+
+//COMMIT 6:
+
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let i = 0; i < ninjaTurtles.length; i++) {
+//let newNinjas[i] = ninjaTurtles[i].toUpperCase(); //DIDN'T WORK
+console.log(ninjaTurtles[i].toUpperCase());
+};
+
+
+//COMMIT 7:
+
+
+
+//COMMIT 8:
