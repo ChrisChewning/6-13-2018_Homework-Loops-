@@ -1,5 +1,5 @@
 
-//Write a for loop that will log the numbers 1 through 20.
+//1. Write a for loop that will log the numbers 1 through 20.
 
 for (i = 0; i < 21; i++ ) {
   console.log(i)
@@ -7,21 +7,21 @@ for (i = 0; i < 21; i++ ) {
 
 
 
-//Write a for loop that will log only the even numbers in 0 through 200.
+//2. Write a for loop that will log only the even numbers in 0 through 200.
 
 for (i = 0; i <= 200; i+=2) {
   console.log(i)
 };
 
 
-//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+//3. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
 
 for (i = 0; i <20 ; i++) {
 console.log("Love me, pet me! HSSSSS!");
 };
 
-// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+//4. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 //
 // Hint: You will need to use Math.random()
 
@@ -29,9 +29,11 @@ for (i = 0; i <20 ; i+=2) {
   console.log(Math.random("Love me, pet me! HSSSSS!"));
 };
 
+//Chain methods? So they're integers and not 0 - 1, which is what the random method does.
 
 
-//FIZZ BUZZ
+
+//5. FIZZ BUZZ
 // - Write a javascript application that logs all numbers from 1 - 100.
 // - If a number is divisible by 3 log "Fizz" instead of the number.
 // - If a number is divisible by 5 log "Buzz" instead of the number.
@@ -53,7 +55,7 @@ for (i = 1; i <=100; i++) {
 };
 
 
-//COMMIT 5: Getting to Know You Answered
+//COMMIT 5: Getting to Know You Answered. WORKS!
 
 // //GETTING TO KNOW YOU (REMOVING AND CHANGING)
 const thom = ["Thom", 1000, "Christchurch"]
@@ -83,7 +85,7 @@ console.log(kristyn);
 
 
 
-//COMMIT 6:
+//COMMIT 6: WORKS! Review what didn't work at first. 
 
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
@@ -95,6 +97,78 @@ console.log(ninjaTurtles[i].toUpperCase());
 
 //COMMIT 7:
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire
+// Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+//step 1: remove krystn's left shoe. save it const kristynsShoe.
+console.log(const kristynsLeftShoe = kristynsShoe[0]);
+console.log(kristynsShoe.shift());
+
+//step 2: use kristynsShoe to add it to Thom's accessories array.
+console.log(thomsCloset[2][1] = kristynsLeftShoe);
+
+
+// Dress Us Up
+// Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+//step 1: const 3 separate outfits.
+//step 2: 'Kristyn will be wearing ' + const ____ + ' on Tuesday ' + const + ' on Wednesday ' + const + and ' const ' + on Thursday'
+
+
 
 
 //COMMIT 8:
+
+
+// Continue looking at the closet arrays:
+//
+// Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+//MY GUESS SO FAR: for (let i = 0; let <= kristynsCloset.length; i++) {
+// console.log("WHIRR: Now washing " + [i]);
+// }
+
+//Step 2: console.log all of the arrays.
+// Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+//
+
+//MY GUESS SO FAR: for loop to loop through each array. Console.log after each array.length is done?
+
+
+
+//COMMIT 9:
+
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+//
+// Find the sum of all the multiples of 3 or 5 below 1000.
